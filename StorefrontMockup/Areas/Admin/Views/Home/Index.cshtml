@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Admin</h1>
+
+<ul>
+    <li>
+        @Html.ActionLink("Inventory Items", "Index", "InventoryItem")
+    </li>
+    <li>
+        @Html.ActionLink("Inventory Categories", "Index", "InventoryItemCategory")
+    </li>
+    <li>
+        @Html.ActionLink("Units Of Measure", "Index", "UnitOfMeasure")
+    </li>
+    <li>
+        @Html.ActionLink("Item Photos", "Index", "InventoryItemPhoto")
+    </li>
+</ul>
+
